@@ -71,7 +71,6 @@
     <ClInclude Include="..\libAACdec\src\stereo.h" />
     <ClInclude Include="..\libAACenc\include\aacenc_lib.h" />
     <ClInclude Include="..\libAACenc\src\aacenc.h" />
-    <ClInclude Include="..\libAACenc\src\aacenc_hcr.h" />
     <ClInclude Include="..\libAACenc\src\aacenc_pns.h" />
     <ClInclude Include="..\libAACenc\src\aacEnc_ram.h" />
     <ClInclude Include="..\libAACenc\src\aacEnc_rom.h" />
@@ -142,6 +141,7 @@
     <ClInclude Include="..\libMpegTPDec\src\mpegFileFormat.h" />
     <ClInclude Include="..\libMpegTPDec\src\tpdec_adif.h" />
     <ClInclude Include="..\libMpegTPDec\src\tpdec_adts.h" />
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_drm.h" />
     <ClInclude Include="..\libMpegTPDec\src\tpdec_latm.h" />
     <ClInclude Include="..\libMpegTPEnc\include\mpegFileWrite.h" />
     <ClInclude Include="..\libMpegTPEnc\include\tpenc_lib.h" />
@@ -222,7 +222,6 @@
     <ClCompile Include="..\libAACdec\src\rvlcconceal.cpp" />
     <ClCompile Include="..\libAACdec\src\stereo.cpp" />
     <ClCompile Include="..\libAACenc\src\aacenc.cpp" />
-    <ClCompile Include="..\libAACenc\src\aacenc_hcr.cpp" />
     <ClCompile Include="..\libAACenc\src\aacenc_lib.cpp" />
     <ClCompile Include="..\libAACenc\src\aacenc_pns.cpp" />
     <ClCompile Include="..\libAACenc\src\aacEnc_ram.cpp" />
@@ -271,6 +270,7 @@
     <ClCompile Include="..\libMpegTPDec\src\tpdec_adif.cpp" />
     <ClCompile Include="..\libMpegTPDec\src\tpdec_adts.cpp" />
     <ClCompile Include="..\libMpegTPDec\src\tpdec_asc.cpp" />
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_drm.cpp" />
     <ClCompile Include="..\libMpegTPDec\src\tpdec_latm.cpp" />
     <ClCompile Include="..\libMpegTPDec\src\tpdec_lib.cpp" />
     <ClCompile Include="..\libMpegTPEnc\src\tpenc_adif.cpp" />

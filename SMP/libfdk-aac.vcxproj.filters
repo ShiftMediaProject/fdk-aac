@@ -174,9 +174,6 @@
     <ClInclude Include="..\libAACenc\src\aacenc.h">
       <Filter>Header Files\libAACenc\src</Filter>
     </ClInclude>
-    <ClInclude Include="..\libAACenc\src\aacenc_hcr.h">
-      <Filter>Header Files\libAACenc\src</Filter>
-    </ClInclude>
     <ClInclude Include="..\libAACenc\src\aacenc_pns.h">
       <Filter>Header Files\libAACenc\src</Filter>
     </ClInclude>
@@ -558,6 +555,9 @@
     <ClInclude Include="..\libPCMutils\include\limiter.h">
       <Filter>Header Files\libPCMutils</Filter>
     </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_drm.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libAACdec\src\aac_ram.cpp">
@@ -684,9 +684,6 @@
       <Filter>Source Files\libAACenc</Filter>
     </ClCompile>
     <ClCompile Include="..\libAACenc\src\aacenc.cpp">
-      <Filter>Source Files\libAACenc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libAACenc\src\aacenc_hcr.cpp">
       <Filter>Source Files\libAACenc</Filter>
     </ClCompile>
     <ClCompile Include="..\libAACenc\src\aacenc_lib.cpp">
@@ -910,6 +907,9 @@
     </ClCompile>
     <ClCompile Include="..\libPCMutils\src\limiter.cpp">
       <Filter>Source Files\libPCMutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_drm.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
