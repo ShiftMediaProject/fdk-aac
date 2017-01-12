@@ -97,6 +97,9 @@ amm-info@iis.fraunhofer.de
 #if defined(__arm__)
 #include "arm/clz_arm.h"
 
+#elif defined(__aarch64__) || defined(__AARCH64EL__)
+#include "aarch64/clz_aarch64.h"
+
 #elif defined(__mips__)	/* cppp replaced: elif */
 #include "mips/clz_mips.h"
 

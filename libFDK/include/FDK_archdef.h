@@ -99,7 +99,7 @@ amm-info@iis.fraunhofer.de
 /* Take action against VisualStudio 2005 crosscompile problems. */
 
 /* Use single macro (the GCC built in macro) for architecture identification independent of the particular toolchain */
-#if defined(__i386__) || defined(__i486__) || defined(__i586__) || defined(__i686__) || (defined(_MSC_VER) && defined(_M_IX86)) || defined (__x86_64__)
+#if defined(__i386__) || defined(__i486__) || defined(__i586__) || defined(__i686__) || (defined(_MSC_VER) && defined(_M_IX86)) || defined (__x86_64__) || (defined(_MSC_VER) && defined(_M_X64))
 #define __x86__
 #endif
 
@@ -154,7 +154,6 @@ amm-info@iis.fraunhofer.de
 #endif
 
 #ifdef _M_ARM
-#include "cmnintrin.h"
 #include "armintr.h"
 #endif
 
@@ -197,6 +196,14 @@ amm-info@iis.fraunhofer.de
 #undef WINDOWTABLE_16BIT
 #undef POW2COEFF_16BIT
 #undef LDCOEFF_16BIT
+
+#elif defined(__aarch64__) || defined(__AARCH64EL__)
+#define ARCH_PREFER_MULT_32x32
+#define ARCH_PREFER_MULT_32x16
+#define SINETABLE_16BIT
+#define POW2COEFF_16BIT
+#define LDCOEFF_16BIT
+#define WINDOWTABLE_16BIT
 
 #elif defined(__x86__)	/* cppp replaced: elif */
 #define ARCH_PREFER_MULT_32x16

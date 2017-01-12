@@ -2,7 +2,7 @@
 /* -----------------------------------------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2013 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
+© Copyright  1995 - 2015 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
   All rights reserved.
 
  1.    INTRODUCTION
@@ -81,74 +81,66 @@ www.iis.fraunhofer.de/amm
 amm-info@iis.fraunhofer.de
 ----------------------------------------------------------------------------------------------------------- */
 
-/********************************  Fraunhofer IIS  ***************************
+/*****************************  MPEG-4 AAC Decoder  **************************
 
-   Author(s):   Arthur Tritthart
-   Description: (ARM optimised) LPP transposer subroutines
+   Author(s):   Christian Griebel
+   Description: DRM transport stuff
 
 ******************************************************************************/
 
+#include "tpdec_drm.h"
 
-#if defined(__arm__)
+
+#include "FDK_bitstream.h"
 
 
-#define FUNCTION_LPPTRANSPOSER_func1
 
-#ifdef FUNCTION_LPPTRANSPOSER_func1
-
-/* Note: This code requires only 43 cycles per iteration instead of 61 on ARM926EJ-S */
-#ifdef __GNUC__
-__attribute__ ((noinline))
-#endif
-static void lppTransposer_func1(
-  FIXP_DBL *lowBandReal,
-  FIXP_DBL *lowBandImag,
-  FIXP_DBL **qmfBufferReal,
-  FIXP_DBL **qmfBufferImag,
-  int loops,
-  int hiBand,
-  int dynamicScale,
-  int descale,
-  FIXP_SGL a0r,
-  FIXP_SGL a0i,
-  FIXP_SGL a1r,
-  FIXP_SGL a1i)
+void drmRead_CrcInit(HANDLE_DRM pDrm)      /*!< pointer to drm crc info stucture */
 {
+  FDK_ASSERT(pDrm != NULL);
 
-  FIXP_DBL real1, real2, imag1, imag2, accu1, accu2;
-
-  real2 = lowBandReal[-2];
-  real1 = lowBandReal[-1];
-  imag2 = lowBandImag[-2];
-  imag1 = lowBandImag[-1];
-  for(int i=0; i < loops; i++)
-  {
-    accu1 = fMultDiv2(         a0r,real1);
-    accu2 = fMultDiv2(         a0i,imag1);
-    accu1 = fMultAddDiv2(accu1,a1r,real2);
-    accu2 = fMultAddDiv2(accu2,a1i,imag2);
-    real2 = fMultDiv2(         a1i,real2);
-    accu1 = accu1 - accu2;
-    accu1 = accu1 >> dynamicScale;
-
-    accu2 = fMultAddDiv2(real2,a1r,imag2);
-    real2 = real1;
-    imag2 = imag1;
-    accu2 = fMultAddDiv2(accu2,a0i,real1);
-    real1 = lowBandReal[i];
-    accu2 = fMultAddDiv2(accu2,a0r,imag1);
-    imag1 = lowBandImag[i];
-    accu2 = accu2 >> dynamicScale;
-
-    accu1 <<= 1;
-    accu2 <<= 1;
-
-    qmfBufferReal[i][hiBand] = accu1 + (real1>>descale);
-    qmfBufferImag[i][hiBand] = accu2 + (imag1>>descale);
-  }
+  FDKcrcInit(&pDrm->crcInfo, 0x001d, 0xFFFF, 8);
 }
-#endif  /* #ifdef FUNCTION_LPPTRANSPOSER_func1 */
-#endif  /* __arm__ */
 
+int drmRead_CrcStartReg(
+                     HANDLE_DRM pDrm,            /*!< pointer to drm stucture */
+                     HANDLE_FDK_BITSTREAM hBs,   /*!< handle to current bit buffer structure */
+                     int mBits                   /*!< number of bits in crc region */
+                   )
+{
+  FDK_ASSERT(pDrm != NULL);
+
+  FDKcrcReset(&pDrm->crcInfo);
+
+  pDrm->crcReadValue = FDKreadBits(hBs, 8);
+
+  return ( FDKcrcStartReg(&pDrm->crcInfo, hBs, mBits) );
+
+}
+
+void drmRead_CrcEndReg(
+                    HANDLE_DRM pDrm,             /*!< pointer to drm crc info stucture */
+                    HANDLE_FDK_BITSTREAM hBs,    /*!< handle to current bit buffer structure */
+                    int reg                      /*!< crc region */
+                  )
+{
+  FDK_ASSERT(pDrm != NULL);
+
+  FDKcrcEndReg(&pDrm->crcInfo, hBs, reg);
+}
+
+TRANSPORTDEC_ERROR drmRead_CrcCheck( HANDLE_DRM pDrm )
+{
+  TRANSPORTDEC_ERROR ErrorStatus = TRANSPORTDEC_OK;
+  USHORT crc;
+
+  crc = FDKcrcGetCRC(&pDrm->crcInfo) ^ 0xFF;
+  if (crc != pDrm->crcReadValue)
+  {
+    return (TRANSPORTDEC_CRC_ERROR);
+  }
+
+  return (ErrorStatus);
+}
 
 

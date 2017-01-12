@@ -81,16 +81,42 @@ www.iis.fraunhofer.de/amm
 amm-info@iis.fraunhofer.de
 ----------------------------------------------------------------------------------------------------------- */
 
-/***************************  MPEG AAC Audio Encoder  *************************
+/***************************  Fraunhofer IIS FDK Tools  **********************
 
-   Initial author:       R. Boehm
-   contents/description: huffman codeword reordering
-                         based on source from aacErrRobTrans
+   Author(s):
+   Description: fixed point intrinsics
 
 ******************************************************************************/
 
-#ifndef _AACENC_HCR
-#define _AACENC_HCR_H
+#if defined(__aarch64__) || defined(__AARCH64EL__)
 
+#if defined(__GNUC__)
+  /* aarch64 gcc*/
 
-#endif  /* ifndef _AACENC_HCR */
+  #define FUNCTION_fixnormz_D
+  #define FUNCTION_fixnorm_D
+
+  inline INT fixnormz_D(LONG value)
+  {
+    INT result;
+    asm("clz %w0, %w1 ": "=r"(result) : "r"(value) );
+    return result;
+  }
+
+  inline INT fixnorm_D(LONG value)
+  {
+    INT result;
+    if (value == 0) {
+      return 0;
+    }
+    if (value < 0) {
+      value = ~value;
+    }
+    result =  fixnormz_D(value);
+    return result - 1;
+  }
+
+#endif /* aarch64 toolchain */
+
+#endif /* __aarch64__ */
+

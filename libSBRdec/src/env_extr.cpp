@@ -2,7 +2,7 @@
 /* -----------------------------------------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2013 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
+© Copyright  1995 - 2015 Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V.
   All rights reserved.
 
  1.    INTRODUCTION
@@ -327,7 +327,7 @@ sbrGetHeaderData (HANDLE_SBR_HEADER_DATA hHeaderData,
   }
 
   /* Look for new settings. IEC 14496-3, 4.6.18.3.1 */
-  if(hHeaderData->syncState != SBR_ACTIVE ||
+  if(hHeaderData->syncState < SBR_HEADER ||
      lastHeader.startFreq   != pBsData->startFreq   ||
      lastHeader.stopFreq    != pBsData->stopFreq    ||
      lastHeader.freqScale   != pBsData->freqScale   ||
@@ -904,6 +904,9 @@ static const FRAME_INFO v_frame_info4_8 = { 0, 4, {0, 2, 4, 6, 8}, {1, 1, 1, 1},
             break;
         default:
             FDK_ASSERT(0);
+            /* in case assertion checks are disabled, force a definite memory fault at first access */
+            pTable = NULL;
+            break;
     }
 
     /* look number of envelopes in table */
