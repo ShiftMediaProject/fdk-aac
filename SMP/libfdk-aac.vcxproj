@@ -463,14 +463,12 @@
     <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
     <TargetName>fdk-aacd</TargetName>
-    <LinkIncremental>false</LinkIncremental>
     <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
     <TargetName>fdk-aacd</TargetName>
     <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
-    <LinkIncremental>false</LinkIncremental>
     <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -518,6 +516,7 @@
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0502;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -568,6 +567,7 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <PreprocessorDefinitions>WIN32;__x86_64__;_WIN32_WINNT=0x0600;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -618,6 +618,7 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0502;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\x86\$(TargetName)$(TargetExt)</OutputFile>
@@ -670,6 +671,7 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <PreprocessorDefinitions>WIN32;__x86_64__;_WIN32_WINNT=0x0600;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)\bin\x64\$(TargetName)$(TargetExt)</OutputFile>
@@ -724,9 +726,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0502;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -787,9 +786,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0502;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -850,9 +846,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;__x86_64__;_WIN32_WINNT=0x0600;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -913,9 +906,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;__x86_64__;_WIN32_WINNT=0x0600;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -976,9 +966,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0502;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -1040,9 +1027,6 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <FloatingPointModel>Fast</FloatingPointModel>
-      <FloatingPointExceptions>false</FloatingPointExceptions>
       <AdditionalIncludeDirectories>../libaacenc/include;../libaacdec/include;../libFDK/include;../libMpegTPEnc/include;../libMpegTPDec/include;../libPCMutils/include;../libSBRenc/include;../libSBRdec/include;../libSYS/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;__x86_64__;_WIN32_WINNT=0x0600;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018;4267;4838;4102;%(DisableSpecificWarnings)</DisableSpecificWarnings>
