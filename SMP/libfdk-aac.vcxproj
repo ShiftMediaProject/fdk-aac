@@ -528,19 +528,19 @@
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -550,8 +550,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -579,19 +579,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -601,8 +601,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -632,19 +632,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -654,8 +654,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -684,19 +684,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -706,8 +706,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -744,19 +744,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -766,8 +766,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -804,19 +804,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -826,8 +826,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -864,19 +864,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -886,8 +886,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -924,19 +924,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -946,8 +946,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -985,19 +985,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -1007,8 +1007,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
@@ -1045,19 +1045,19 @@ del /f /q $(OutDir)\licenses\fdk-aac.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\machine_type.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\FDK_audio.h $(OutDir)\include\fdk-aac
-copy ..\libSYS\include\genericStds.h $(OutDir)\include\fdk-aac
-copy ..\libAACenc\include\aacenc_lib.h $(OutDir)\include\fdk-aac
-copy ..\libAACdec\include\aacdecoder_lib.h $(OutDir)\include\fdk-aac
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
+copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
 copy ..\NOTICE $(OutDir)\licenses\fdk-aac.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rd /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rd /s /q "$(OutDir)"\include\fdk-aac
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -1067,8 +1067,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\fdk-aac (
-rmdir /s /q $(OutDir)\include\fdk-aac
+      <Command>if exist "$(OutDir)"\include\fdk-aac (
+rmdir /s /q "$(OutDir)"\include\fdk-aac
 )
 if exist $(OutDir)\licenses\fdk-aac.txt (
 del /f /q $(OutDir)\licenses\fdk-aac.txt
