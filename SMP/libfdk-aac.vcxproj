@@ -862,6 +862,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -912,6 +913,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -960,6 +962,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1010,6 +1013,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1064,6 +1068,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1122,6 +1127,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1175,6 +1181,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1232,6 +1239,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1287,6 +1295,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1344,6 +1353,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1399,6 +1409,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1456,6 +1467,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1518,6 +1530,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1584,6 +1597,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1645,6 +1659,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
@@ -1710,6 +1725,7 @@ mkdir "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\machine_type.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\FDK_audio.h "$(OutDir)"\include\fdk-aac
 copy ..\libSYS\include\genericStds.h "$(OutDir)"\include\fdk-aac
+copy ..\libSYS\include\syslib_channelMapDescr.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACenc\include\aacenc_lib.h "$(OutDir)"\include\fdk-aac
 copy ..\libAACdec\include\aacdecoder_lib.h "$(OutDir)"\include\fdk-aac
 mkdir $(OutDir)\licenses
