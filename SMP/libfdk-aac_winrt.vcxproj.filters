@@ -1,0 +1,1295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7339b861-4f44-4b1e-a269-80840b28dccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e1fefaf6-35e8-42ec-bb33-f0fc6ebf8d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c4aa96df-dce8-4e46-ba43-a109ebaad94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libAACdec">
+      <UniqueIdentifier>{cb3fcf79-6cf4-4d5e-a6b0-0b86f5932507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libAACdec">
+      <UniqueIdentifier>{d48ed348-2b3d-412f-830e-c5c6ed199ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libAACenc">
+      <UniqueIdentifier>{69b4e9a4-0a11-4175-b8f8-7ad9e29b8dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libAACenc">
+      <UniqueIdentifier>{0dca5d37-8e1d-41fa-9acd-f40da8b030be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libMpegTPDec">
+      <UniqueIdentifier>{5ce301a9-0477-46e1-a456-f48545f3e08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libMpegTPDec">
+      <UniqueIdentifier>{bf829b78-4f9b-427e-b43b-c506ea50f7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libMpegTPEnc">
+      <UniqueIdentifier>{6870aec6-268e-441e-8ba1-50257e561497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libMpegTPEnc">
+      <UniqueIdentifier>{b9d8c3b7-e466-4499-bd20-17164825f5f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libPCMutils">
+      <UniqueIdentifier>{689892e7-1939-493b-b817-343a7c86beb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libPCMutils">
+      <UniqueIdentifier>{da8d091f-c570-4ccf-bba4-907dd66a48a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libSBRenc">
+      <UniqueIdentifier>{317b0ec7-2442-4a65-8ee3-139de591aa52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSBRenc">
+      <UniqueIdentifier>{8d449c95-3521-4a4d-b24f-315869251468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSBRdec">
+      <UniqueIdentifier>{26d13aae-3d79-4b4f-8cb4-bcd16c3fc96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libSBRdec">
+      <UniqueIdentifier>{c38c164c-900a-4ff1-af16-1492a972201c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSYS">
+      <UniqueIdentifier>{9298cd42-8611-4d96-a06f-b8bd3d0f2f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libSYS">
+      <UniqueIdentifier>{d0eeb4ec-0372-417c-88b8-f3cf0df6d4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libFDK">
+      <UniqueIdentifier>{1df926ac-a087-4453-a768-a015a3fca3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libFDK">
+      <UniqueIdentifier>{ce94c23d-7521-4a26-89d6-3070673d4373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libAACdec\src">
+      <UniqueIdentifier>{271f00f4-b3c4-495e-89aa-20e276c2bff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libAACenc\src">
+      <UniqueIdentifier>{26636a1b-66d2-44aa-bb65-767737d92066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libMpegTPDec\src">
+      <UniqueIdentifier>{c581ff4d-124b-4135-8661-3b591ab8f75d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libMpegTPEnc\src">
+      <UniqueIdentifier>{8138a65a-661b-469f-9fb4-4fd7e39ce85f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSBRenc\src">
+      <UniqueIdentifier>{0bbee39e-0dfe-4f9e-bba5-ce488d852afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSBRdec\src">
+      <UniqueIdentifier>{cbed7612-7e49-46cd-a83a-ae05d624bbe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libFDK\src">
+      <UniqueIdentifier>{79e08546-d48f-4d2a-9c61-ed3a6498f2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libFDK\x86">
+      <UniqueIdentifier>{f58dba1c-c30c-42a6-a0de-12c302c1755c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libArithCoding">
+      <UniqueIdentifier>{28849d05-05b8-4bd0-bcf0-23cc9274aaef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libArithCoding">
+      <UniqueIdentifier>{0588cf25-699c-44b8-9c3f-d5904df260b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libDRCdec">
+      <UniqueIdentifier>{107d5254-0955-48d3-8158-3ed2305c0346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libDRCdec">
+      <UniqueIdentifier>{0ebe75e0-b541-402f-afc6-ecdf602cf6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libDRCdec\src">
+      <UniqueIdentifier>{9be7e27a-4a9e-4b69-a3a0-963a74048b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libPCMutils\src">
+      <UniqueIdentifier>{71764774-379e-4be4-b53e-2165ba1619c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSACdec">
+      <UniqueIdentifier>{0f3ef86e-f843-4af1-bb3d-d6e593678cba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libSACdec">
+      <UniqueIdentifier>{4ab984a4-6985-4d91-a8cc-8b9a8b94d360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSACdec\src">
+      <UniqueIdentifier>{427455a3-c71c-49bf-ae26-ebad0af6acc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSACenc">
+      <UniqueIdentifier>{ccbdfb02-a915-42a4-9529-89e4fec14353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libSACenc">
+      <UniqueIdentifier>{33da1401-226a-49a6-9a7a-2d049d1393a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libSACenc\src">
+      <UniqueIdentifier>{4da83866-06a4-462a-bc17-9fdba4803188}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libAACdec\include\aacdecoder_lib.h">
+      <Filter>Header Files\libAACdec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\include\aacenc_lib.h">
+      <Filter>Header Files\libAACenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aac_ram.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aac_rom.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_drc.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_drc_types.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_hcr.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_hcr_bit.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_hcr_types.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_hcrs.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_pns.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdec_tns.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\aacdecoder.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\block.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\channel.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\channelinfo.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\conceal.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\conceal_types.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\ldfiltbank.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\overlapadd.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\pulsedata.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\rvlc.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\rvlc_info.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\rvlcbit.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\rvlcconceal.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\stereo.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\aacenc.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\aacenc_pns.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\aacEnc_ram.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\aacEnc_rom.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\aacenc_tns.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\adj_thr.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\adj_thr_data.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\band_nrg.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\bandwidth.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\bit_cnt.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\bitenc.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\block_switch.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\channel_map.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\chaosmeasure.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\dyn_bits.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\grp_data.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\intensity.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\interface.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\line_pe.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\metadata_compressor.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\metadata_main.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\ms_stereo.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\noisedet.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\pns_func.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\pnsparam.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\pre_echo_control.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\psy_configuration.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\psy_const.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\psy_data.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\psy_main.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\qc_data.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\qc_main.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\quantize.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\sf_estim.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\spreading.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\tns_func.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\tonality.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\transform.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\abs.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\autocorr2nd.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\clz.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\common_fix.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\cplx_mul.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\dct.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_archdef.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_bitbuffer.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_bitstream.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_core.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_crc.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_hybrid.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_tools_rom.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_trigFcts.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fft.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fft_rad2.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fixmadd.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fixminmax.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fixmul.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\fixpoint_math.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\mdct.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\qmf.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\scale.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\scramble.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\x86\clz_x86.h">
+      <Filter>Header Files\libFDK\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\x86\fixmul_x86.h">
+      <Filter>Header Files\libFDK\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\x86\abs_x86.h">
+      <Filter>Header Files\libFDK\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_adif.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_adts.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_latm.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\include\tp_data.h">
+      <Filter>Header Files\libMpegTPDec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\include\tpdec_lib.h">
+      <Filter>Header Files\libMpegTPDec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\src\tpenc_adif.h">
+      <Filter>Header Files\libMpegTPEnc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\src\tpenc_adts.h">
+      <Filter>Header Files\libMpegTPEnc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\src\tpenc_asc.h">
+      <Filter>Header Files\libMpegTPEnc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\src\tpenc_latm.h">
+      <Filter>Header Files\libMpegTPEnc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\include\tp_data.h">
+      <Filter>Header Files\libMpegTPEnc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\include\tpenc_lib.h">
+      <Filter>Header Files\libMpegTPEnc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\include\sbrdecoder.h">
+      <Filter>Header Files\libSBRdec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\env_calc.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\env_dec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\env_extr.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\huff_dec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\lpp_tran.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\psbitdec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\psdec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbr_crc.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbr_deb.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbr_dec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbr_ram.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbr_rom.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbrdec_drc.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\sbrdec_freq_sca.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\transcendent.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\code_env.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\env_bit.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\env_est.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\fram_gen.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\invf_est.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\mh_det.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\nf_est.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\ps_bitenc.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\ps_const.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\ps_encode.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\ps_main.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\resampler.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbr.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbr_def.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbr_misc.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbrenc_freq_sca.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\ton_corr.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\tran_det.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\bit_sbr.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\cmondata.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\include\sbr_encoder.h">
+      <Filter>Header Files\libSBRenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSYS\include\genericStds.h">
+      <Filter>Header Files\libSYS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSYS\include\machine_type.h">
+      <Filter>Header Files\libSYS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSYS\include\FDK_audio.h">
+      <Filter>Header Files\libSYS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libPCMutils\include\limiter.h">
+      <Filter>Header Files\libPCMutils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tpdec_drm.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\FDK_delay.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_ace_d4t64.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_ace_ltp.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_acelp.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_const.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_fac.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_lpc.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_lpd.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACdec\src\usacdec_rom.h">
+      <Filter>Header Files\libAACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libAACenc\src\mps_main.h">
+      <Filter>Header Files\libAACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libArithCoding\include\ac_arith_coder.h">
+      <Filter>Header Files\libArithCoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\include\FDK_drcDecLib.h">
+      <Filter>Header Files\libDRCdec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_gainDecoder.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_reader.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_rom.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_selectionProcess.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_tools.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDec_types.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcDecoder.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcGainDec_init.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcGainDec_preprocess.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libDRCdec\src\drcGainDec_process.h">
+      <Filter>Header Files\libDRCdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_decorrelate.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_lpc.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_matrixCalloc.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\FDK_qmf_domain.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\huff_nodes.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\nlc_dec.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\qmf_pcm.h">
+      <Filter>Header Files\libFDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libFDK\include\x86\fixpoint_math_x86.h">
+      <Filter>Header Files\libFDK\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPDec\src\tp_version.h">
+      <Filter>Header Files\libMpegTPDec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libMpegTPEnc\src\tp_version.h">
+      <Filter>Header Files\libMpegTPEnc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libPCMutils\include\pcm_utils.h">
+      <Filter>Header Files\libPCMutils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libPCMutils\include\pcmdmx_lib.h">
+      <Filter>Header Files\libPCMutils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libPCMutils\src\version.h">
+      <Filter>Header Files\libPCMutils\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\include\sac_dec_errorcodes.h">
+      <Filter>Header Files\libSACdec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\include\sac_dec_lib.h">
+      <Filter>Header Files\libSACdec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_tsd.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_stp.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_smoothing.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_rom.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_reshapeBBEnv.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_qmf.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_process.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_dec_ssc_struct.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_dec_interface.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_dec_conceal.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_dec.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_calcM1andM2.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACdec\src\sac_bitdec.h">
+      <Filter>Header Files\libSACdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\include\sacenc_lib.h">
+      <Filter>Header Files\libSACenc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_vectorfunctions.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_tree.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_staticgain.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_paramextract.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_onsetdetect.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_nlc_enc.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_huff_tab.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_framewindowing.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_filter.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_dmx_tdom_enh.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_delay.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_const.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSACenc\src\sacenc_bitstream.h">
+      <Filter>Header Files\libSACenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\hbe.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\psdec_drm.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\pvc_dec.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbrenc_ram.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRenc\src\sbrenc_rom.h">
+      <Filter>Header Files\libSBRenc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSYS\include\syslib_channelMapDescr.h">
+      <Filter>Header Files\libSYS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libSBRdec\src\HFgen_preFlat.h">
+      <Filter>Header Files\libSBRdec\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libAACdec\src\aac_ram.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aac_rom.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_drc.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_hcr.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_hcr_bit.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_hcrs.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_pns.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdec_tns.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdecoder.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\aacdecoder_lib.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\block.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\channel.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\channelinfo.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\conceal.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\ldfiltbank.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\pulsedata.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\rvlc.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\rvlcbit.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\rvlcconceal.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\stereo.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\block_switch.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\channel_map.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\chaosmeasure.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\dyn_bits.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\grp_data.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\intensity.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\line_pe.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\metadata_compressor.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\metadata_main.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\ms_stereo.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\noisedet.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\pnsparam.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\pre_echo_control.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\psy_configuration.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\psy_main.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\qc_main.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\quantize.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\sf_estim.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\spreading.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\tonality.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\transform.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacenc.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacenc_lib.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacenc_pns.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacEnc_ram.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacEnc_rom.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\aacenc_tns.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\adj_thr.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\band_nrg.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\bandwidth.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\bit_cnt.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\bitenc.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_trigFcts.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\fft.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\fft_rad2.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\fixpoint_math.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\mdct.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\qmf.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\scale.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\autocorr2nd.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\dct.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_bitbuffer.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_core.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_crc.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_hybrid.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_tools_rom.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_asc.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_latm.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_lib.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_adif.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_adts.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPEnc\src\tpenc_latm.cpp">
+      <Filter>Source Files\libMpegTPEnc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPEnc\src\tpenc_lib.cpp">
+      <Filter>Source Files\libMpegTPEnc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPEnc\src\tpenc_adif.cpp">
+      <Filter>Source Files\libMpegTPEnc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPEnc\src\tpenc_adts.cpp">
+      <Filter>Source Files\libMpegTPEnc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPEnc\src\tpenc_asc.cpp">
+      <Filter>Source Files\libMpegTPEnc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\env_calc.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\env_dec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\env_extr.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\huff_dec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\lpp_tran.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\psbitdec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\psdec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbr_crc.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbr_deb.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbr_dec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbr_ram.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbr_rom.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbrdec_drc.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbrdec_freq_sca.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\sbrdecoder.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\ps_main.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\resampler.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\sbr_encoder.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\sbr_misc.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\sbrenc_freq_sca.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\ton_corr.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\tran_det.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\bit_sbr.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\code_env.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\env_bit.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\env_est.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\fram_gen.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\invf_est.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\mh_det.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\nf_est.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\ps_bitenc.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\ps_encode.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSYS\src\genericStds.cpp">
+      <Filter>Source Files\libSYS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libPCMutils\src\limiter.cpp">
+      <Filter>Source Files\libPCMutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libMpegTPDec\src\tpdec_drm.cpp">
+      <Filter>Source Files\libMpegTPDec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\FDK_delay.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_ace_d4t64.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_ace_ltp.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_acelp.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_fac.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_lpc.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_lpd.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACdec\src\usacdec_rom.cpp">
+      <Filter>Source Files\libAACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libAACenc\src\mps_main.cpp">
+      <Filter>Source Files\libAACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libArithCoding\src\ac_arith_coder.cpp">
+      <Filter>Source Files\libArithCoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcDec_gainDecoder.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcDec_reader.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcDec_rom.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcDec_selectionProcess.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcDec_tools.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcGainDec_init.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcGainDec_preprocess.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\drcGainDec_process.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libDRCdec\src\FDK_drcDecLib.cpp">
+      <Filter>Source Files\libDRCdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_decorrelate.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_lpc.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_matrixCalloc.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\FDK_qmf_domain.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\huff_nodes.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libFDK\src\nlc_dec.cpp">
+      <Filter>Source Files\libFDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libPCMutils\src\pcm_utils.cpp">
+      <Filter>Source Files\libPCMutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libPCMutils\src\pcmdmx_lib.cpp">
+      <Filter>Source Files\libPCMutils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_tsd.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_stp.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_smoothing.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_rom.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_reshapeBBEnv.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_qmf.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_process.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_dec_lib.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_dec_conceal.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_dec.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_calcM1andM2.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACdec\src\sac_bitdec.cpp">
+      <Filter>Source Files\libSACdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_vectorfunctions.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_tree.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_staticgain.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_paramextract.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_onsetdetect.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_nlc_enc.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_lib.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_huff_tab.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_framewindowing.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_filter.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_dmx_tdom_enh.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_delay.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSACenc\src\sacenc_bitstream.cpp">
+      <Filter>Source Files\libSACenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\hbe.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\psdec_drm.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\psdecrom_drm.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\pvc_dec.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\sbrenc_ram.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRenc\src\sbrenc_rom.cpp">
+      <Filter>Source Files\libSBRenc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSYS\src\syslib_channelMapDescr.cpp">
+      <Filter>Source Files\libSYS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libSBRdec\src\HFgen_preFlat.cpp">
+      <Filter>Source Files\libSBRdec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libfdk-aac.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
