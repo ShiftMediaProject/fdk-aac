@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -123,21 +123,19 @@ void scaleValues(FIXP_DBL *dst, const FIXP_DBL *src, INT len, INT scalefactor);
 #if (SAMPLE_BITS == 16)
 void scaleValues(FIXP_PCM *dst, const FIXP_DBL *src, INT len, INT scalefactor);
 #endif
-void scaleValues(FIXP_PCM *dst, const FIXP_SGL *src, INT len, INT scalefactor);
+void scaleValues(FIXP_SGL *dst, const FIXP_SGL *src, INT len, INT scalefactor);
 void scaleCplxValues(FIXP_DBL *r_dst, FIXP_DBL *i_dst, const FIXP_DBL *r_src,
                      const FIXP_DBL *i_src, INT len, INT scalefactor);
 void scaleValuesWithFactor(FIXP_DBL *vector, FIXP_DBL factor, INT len,
                            INT scalefactor);
 void scaleValuesSaturate(FIXP_DBL *vector, INT len, INT scalefactor);
-void scaleValuesSaturate(FIXP_DBL *dst, FIXP_DBL *src, INT len,
+void scaleValuesSaturate(FIXP_DBL *dst, const FIXP_DBL *src, INT len,
                          INT scalefactor);
-void scaleValuesSaturate(FIXP_SGL *dst, FIXP_DBL *src, INT len,
+void scaleValuesSaturate(FIXP_SGL *dst, const FIXP_DBL *src, INT len,
                          INT scalefactor);
-void scaleValuesSaturate(INT_PCM *dst, FIXP_DBL *src, INT len, INT scalefactor);
 void scaleValuesSaturate(FIXP_SGL *vector, INT len, INT scalefactor);
-void scaleValuesSaturate(FIXP_SGL *dst, FIXP_SGL *src, INT len,
+void scaleValuesSaturate(FIXP_SGL *dst, const FIXP_SGL *src, INT len,
                          INT scalefactor);
-void scaleValuesSaturate(INT_PCM *dst, INT_PCM *src, INT len, INT scalefactor);
 INT getScalefactorShort(const SHORT *vector, INT len);
 INT getScalefactorPCM(const INT_PCM *vector, INT len, INT stride);
 INT getScalefactor(const FIXP_DBL *vector, INT len);

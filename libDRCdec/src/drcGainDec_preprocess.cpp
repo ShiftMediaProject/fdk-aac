@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -285,6 +285,9 @@ static DRC_ERROR _compressorIO_sigmoid_common(
                   &e_tmp2);
   invExp = fDivNorm(FL2FXCONST_DBL(1.0f / (float)(1 << 1)), exp, &e_invExp);
   e_invExp += 1 - 5;
+  if (tmp2 < (FIXP_DBL)0) {
+    return DE_NOT_OK;
+  }
   denom = fPow(tmp2, e_tmp2, invExp, e_invExp, &e_denom);
   *out = fDivNormSigned(tmp, denom, &e_out);
   e_out += 7 - e_denom;
@@ -676,7 +679,6 @@ prepareDrcGain(HANDLE_DRC_GAIN_DECODER hGainDec,
       nDrcBands = pActiveDrc->bandCountForChannelGroup[g];
       for (b = 0; b < nDrcBands; b++) {
         DRC_ERROR err = DE_OK;
-        if (gainSetIndex >= 12) return DE_PARAM_OUT_OF_RANGE;
         GAIN_SET* pGainSet = &(pCoef->gainSet[gainSetIndex]);
         int seq = pGainSet->gainSequenceIndex[b];
         DRC_CHARACTERISTIC* pDChar = &(pGainSet->drcCharacteristic[b]);
@@ -695,7 +697,6 @@ prepareDrcGain(HANDLE_DRC_GAIN_DECODER hGainDec,
         err = _prepareDrcCharacteristic(pDChar, pCoef, b, &nodeMod);
         if (err) return err;
 
-        if (seq >= 12) return DE_PARAM_OUT_OF_RANGE;
         /* copy a node buffer and convert from dB to linear */
         pLnb->nNodes[lnbp] = fMin((int)hUniDrcGain->nNodes[seq], 16);
         for (i = 0; i < pLnb->nNodes[lnbp]; i++) {

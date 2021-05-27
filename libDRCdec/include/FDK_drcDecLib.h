@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -114,6 +114,8 @@ amm-info@iis.fraunhofer.de
 extern "C" {
 #endif
 
+#define DRC_DEC_LOUDNESS_NOT_PRESENT (LONG)0x7FFFFFFE
+
 typedef struct s_drc_decoder* HANDLE_DRC_DECODER;
 typedef struct s_uni_drc_interface* HANDLE_UNI_DRC_INTERFACE;
 typedef struct s_selection_process_output* HANDLE_SEL_PROC_OUTPUT;
@@ -134,6 +136,7 @@ typedef enum {
   DRC_DEC_EFFECT_TYPE,
   DRC_DEC_EFFECT_TYPE_FALLBACK_CODE,
   DRC_DEC_LOUDNESS_MEASUREMENT_METHOD,
+  DRC_DEC_ALBUM_MODE,
   /* set only system (not user) parameters */
   DRC_DEC_DOWNMIX_ID,
   DRC_DEC_TARGET_CHANNEL_COUNT_REQUESTED, /**< number of output channels
@@ -141,15 +144,20 @@ typedef enum {
                                              choosing an appropriate
                                              downmixInstruction */
   DRC_DEC_BASE_CHANNEL_COUNT,
+  DRC_DEC_FRAME_SIZE,
+  DRC_DEC_SAMPLE_RATE,
   /* get only system parameters */
   DRC_DEC_IS_MULTIBAND_DRC_1,
   DRC_DEC_IS_MULTIBAND_DRC_2,
   DRC_DEC_IS_ACTIVE, /**< MPEG-D DRC payload is present and at least one of
                         Dynamic Range Control (DRC) or Loudness Normalization
                         (LN) is activated */
-  DRC_DEC_TARGET_CHANNEL_COUNT_SELECTED /**< number of output channels if
-                                           appropriate downmixInstruction exists
-                                         */
+  DRC_DEC_TARGET_CHANNEL_COUNT_SELECTED, /**< number of output channels if
+                                            appropriate downmixInstruction
+                                            exists */
+  DRC_DEC_OUTPUT_LOUDNESS /**< output loudness in dB, with exponent e = 7, or
+                             DRC_DEC_LOUDNESS_NOT_PRESENT if no loudness is
+                             contained in the bitstream */
 } DRC_DEC_USERPARAM;
 
 typedef enum {

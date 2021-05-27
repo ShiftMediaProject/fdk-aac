@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -448,6 +448,7 @@ SACDEC_ERROR SpatialDecParseSpecificConfig(
   int bsFreqRes, b3DaudioMode = 0;
   int numHeaderBits;
   int cfgStartPos, bitsAvailable;
+  int treeConfig;
 
   FDKmemclear(pSpatialSpecificConfig, sizeof(SPATIAL_SPECIFIC_CONFIG));
 
@@ -488,13 +489,13 @@ SACDEC_ERROR SpatialDecParseSpecificConfig(
   pSpatialSpecificConfig->freqRes =
       (SPATIALDEC_FREQ_RES)freqResTable_LD[bsFreqRes];
 
-  pSpatialSpecificConfig->treeConfig =
-      (SPATIALDEC_TREE_CONFIG)FDKreadBits(bitstream, 4);
+  treeConfig = FDKreadBits(bitstream, 4);
 
-  if (pSpatialSpecificConfig->treeConfig != SPATIALDEC_MODE_RSVD7) {
+  if (treeConfig != SPATIALDEC_MODE_RSVD7) {
     err = MPS_UNSUPPORTED_CONFIG;
     goto bail;
   }
+  pSpatialSpecificConfig->treeConfig = (SPATIALDEC_TREE_CONFIG) treeConfig;
 
   {
     pSpatialSpecificConfig->nOttBoxes =
@@ -1457,7 +1458,7 @@ static SACDEC_ERROR mapIndexData(
     FIXP_DBL (*pOttVsTotDb1)[MAX_PARAMETER_SETS][MAX_PARAMETER_BANDS],
     FIXP_DBL (*pOttVsTotDb2)[MAX_PARAMETER_SETS][MAX_PARAMETER_BANDS]) {
   int aParamSlots[MAX_PARAMETER_SETS];
-  int aInterpolate[MAX_PARAMETER_SETS];
+  int aInterpolate[MAX_PARAMETER_SETS] = {0};
 
   int dataSets;
   int aMap[MAX_PARAMETER_BANDS + 1];
@@ -1554,21 +1555,20 @@ static SACDEC_ERROR mapIndexData(
   /* Interpolate */
   i1 = 0;
   for (i = 0; i < numParameterSets; i++) {
-    int xi, i2, x1, x2;
-
     if (aInterpolate[i] != 1) {
       i1 = i;
-    }
-    i2 = i;
-    while (aInterpolate[i2] == 1) {
-      i2++;
-    }
-    x1 = paramSlot[i1];
-    xi = paramSlot[i];
-    x2 = paramSlot[i2];
+    } else {
+      int xi, i2, x1, x2;
 
-    if (aInterpolate[i] == 1) {
+      for (i2 = i; i2 < numParameterSets; i2++) {
+        if (aInterpolate[i2] != 1) break;
+      }
       if (i2 >= numParameterSets) return MPS_WRONG_PARAMETERSETS;
+
+      x1 = paramSlot[i1];
+      xi = paramSlot[i];
+      x2 = paramSlot[i2];
+
       for (band = startBand; band < stopBand; band++) {
         int yi, y1, y2;
         y1 = outputIdxData[xttIdx][i1][band];
@@ -1587,9 +1587,9 @@ static SACDEC_ERROR mapIndexData(
   for (ps = 0; ps < numParameterSets; ps++) {
     if (quantMode && (paramType == t_CLD)) {
       if (pOttVsTotDbIn == 0) return MPS_WRONG_OTT;
-      if ((pOttVsTotDb1 == 0) && (ottVsTotDbMode == ottVsTotDb1Activ))
+      if ((pOttVsTotDb1 == 0) && (ottVsTotDbMode & ottVsTotDb1Activ))
         return MPS_WRONG_OTT;
-      if ((pOttVsTotDb2 == 0) && (ottVsTotDbMode == ottVsTotDb2Activ))
+      if ((pOttVsTotDb2 == 0) && (ottVsTotDbMode & ottVsTotDb2Activ))
         return MPS_WRONG_OTT;
 
       for (pb = startBand; pb < stopBand; pb++) {
@@ -1611,6 +1611,10 @@ static SACDEC_ERROR mapIndexData(
   } /* for( i = 0 ; i < numParameterSets; i++ ) */
 
   if (extendFrame) {
+    if (paramType == t_IPD) {
+      llData->bsQuantCoarseXXX[numParameterSets] =
+          llData->bsQuantCoarseXXX[numParameterSets - 1];
+    }
     for (band = startBand; band < stopBand; band++) {
       outputDataIdx[xttIdx][numParameterSets][band] =
           outputDataIdx[xttIdx][numParameterSets - 1][band];

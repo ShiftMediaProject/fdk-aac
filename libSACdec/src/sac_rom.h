@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -111,21 +111,12 @@ amm-info@iis.fraunhofer.de
 #include "machine_type.h"
 
 /* Global ROM table data type: */
-#ifndef ARCH_PREFER_MULT_32x32
-#define FIXP_CFG FIXP_SGL
-#define FX_CFG2FX_DBL FX_SGL2FX_DBL
-#define FX_CFG2FX_SGL
-#define CFG(a) (FX_DBL2FXCONST_SGL(a))
-#define FL2FXCONST_CFG FL2FXCONST_SGL
-#define FX_DBL2FX_CFG(x) FX_DBL2FX_SGL((FIXP_DBL)(x))
-#else
 #define FIXP_CFG FIXP_DBL
 #define FX_CFG2FX_DBL
 #define FX_CFG2FX_SGL FX_DBL2FX_SGL
 #define CFG(a) FIXP_DBL(a)
 #define FL2FXCONST_CFG FL2FXCONST_DBL
 #define FX_DBL2FX_CFG(x) ((FIXP_DBL)(x))
-#endif
 
 /* others  */
 #define SCALE_INV_ICC (2)
@@ -133,21 +124,15 @@ amm-info@iis.fraunhofer.de
 
 #define QCC_SCALE 1
 #define M1M2_DATA FIXP_DBL
-#ifndef ARCH_PREFER_MULT_32x32
-#define M1M2_CDATA FIXP_SGL
-#define M1M2_CDATA2FX_DBL(a) FX_SGL2FX_DBL(a)
-#define FX_DBL2M1M2_CDATA(a) FX_DBL2FX_SGL(a)
-#else
 #define M1M2_CDATA FIXP_DBL
 #define M1M2_CDATA2FX_DBL(a) (a)
 #define FX_DBL2M1M2_CDATA(a) (a)
-#endif
 
 #define CLIP_PROTECT_GAIN_0(x) FL2FXCONST_CFG(((x) / (float)(1 << 0)))
 #define CLIP_PROTECT_GAIN_1(x) FL2FXCONST_CFG(((x) / (float)(1 << 1)))
 #define CLIP_PROTECT_GAIN_2(x) FL2FXCONST_CFG(((x) / (float)(1 << 2)))
 
-#define SF_CLD_C1C2 (8)
+#define SF_CLD_C1C2 (9)
 
 extern const FIXP_CFG dequantCPC__FDK[];
 extern const FIXP_CFG dequantICC__FDK[8];
@@ -160,6 +145,7 @@ extern const FIXP_CFG dequantCLD__FDK[31];
   (FL2FXCONST_DBL(3.1415926535897932f / (float)(1 << (IPD_SCALE - 1))))
 
 extern const FIXP_CFG dequantIPD__FDK[16];
+extern const FIXP_DBL dequantIPD_CLD_ICC_splitAngle__FDK[15][31][8];
 
 extern const FIXP_CFG H11_nc[31][8];
 extern const FIXP_CFG H12_nc[31][8];

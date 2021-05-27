@@ -1,7 +1,7 @@
 /* -----------------------------------------------------------------------------
 Software License for The Fraunhofer FDK AAC Codec Library for Android
 
-© Copyright  1995 - 2018 Fraunhofer-Gesellschaft zur Förderung der angewandten
+© Copyright  1995 - 2019 Fraunhofer-Gesellschaft zur Förderung der angewandten
 Forschung e.V. All rights reserved.
 
  1.    INTRODUCTION
@@ -111,6 +111,8 @@ amm-info@iis.fraunhofer.de
 
 typedef struct s_drcdec_selection_process* HANDLE_DRC_SELECTION_PROCESS;
 
+#define UNDEFINED_LOUDNESS_VALUE (FIXP_DBL)(MAXVAL_DBL - 1)
+
 typedef enum {
   DRCDEC_SELECTION_PROCESS_NO_ERROR = 0,
 
@@ -146,6 +148,7 @@ typedef enum {
   SEL_PROC_EFFECT_TYPE,
   SEL_PROC_EFFECT_TYPE_FALLBACK_CODE,
   SEL_PROC_LOUDNESS_MEASUREMENT_METHOD,
+  SEL_PROC_ALBUM_MODE,
   SEL_PROC_DOWNMIX_ID,
   SEL_PROC_TARGET_LAYOUT,
   SEL_PROC_TARGET_CHANNEL_COUNT,
