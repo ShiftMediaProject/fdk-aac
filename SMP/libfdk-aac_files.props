@@ -183,7 +183,6 @@
     <ClInclude Include="..\libSBRdec\src\pvc_dec.h" />
     <ClInclude Include="..\libSBRdec\src\sbrdec_drc.h" />
     <ClInclude Include="..\libSBRdec\src\sbrdec_freq_sca.h" />
-    <ClInclude Include="..\libSBRdec\src\sbr_crc.h" />
     <ClInclude Include="..\libSBRdec\src\sbr_deb.h" />
     <ClInclude Include="..\libSBRdec\src\sbr_dec.h" />
     <ClInclude Include="..\libSBRdec\src\sbr_ram.h" />
@@ -363,7 +362,6 @@
     <ClCompile Include="..\libSBRdec\src\sbrdecoder.cpp" />
     <ClCompile Include="..\libSBRdec\src\sbrdec_drc.cpp" />
     <ClCompile Include="..\libSBRdec\src\sbrdec_freq_sca.cpp" />
-    <ClCompile Include="..\libSBRdec\src\sbr_crc.cpp" />
     <ClCompile Include="..\libSBRdec\src\sbr_deb.cpp" />
     <ClCompile Include="..\libSBRdec\src\sbr_dec.cpp" />
     <ClCompile Include="..\libSBRdec\src\sbr_ram.cpp">
