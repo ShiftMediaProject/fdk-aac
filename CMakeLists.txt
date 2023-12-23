@@ -43,7 +43,7 @@ if(POLICY CMP0091)
   cmake_policy(SET CMP0091 NEW)
 endif()
 
-project(fdk-aac VERSION 2.0.2)
+project(fdk-aac VERSION 2.0.3)
 
 # Includes
 
@@ -62,7 +62,7 @@ include(CPack)
 # Options
 
 option(BUILD_SHARED_LIBS "Build shared library" ON)
-option(BUILD_PROGRAMS "Build aac-enc utility" OFF)
+option(BUILD_PROGRAMS "Build extra utilities" OFF)
 option(FDK_AAC_INSTALL_CMAKE_CONFIG_MODULE "Install CMake package configuration file" ON)
 option(FDK_AAC_INSTALL_PKGCONFIG_MODULE "Install pkg-config .pc file" ON)
 
@@ -487,10 +487,11 @@ target_link_libraries(fdk-aac PRIVATE $<$<BOOL:${HAVE_LIBM}>:m>)
 ### Set public headers and shared library version. Version info is critical for Unix-like OSes.
 set_target_properties(fdk-aac PROPERTIES
   PUBLIC_HEADER "${fdk_aacinclude_HEADERS}"
-  VERSION 2.0.2
+  VERSION 2.0.3
   SOVERSION 2
   MACHO_COMPATIBILITY_VERSION 3.0.0
-  MACHO_CURRENT_VERSION 3.2.0)
+  MACHO_CURRENT_VERSION 3.3.0
+  LINKER_LANGUAGE C)
 
 ### Some compiler options from Makefile.am
 if(MSVC)
@@ -585,4 +586,15 @@ if(BUILD_PROGRAMS)
   ## Program target installation
   install(TARGETS aac-enc RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
+
+  ## Tool for testing the library
+  set(test_encode_decode_SOURCES
+    test-encode-decode.c
+    wavreader.c
+    wavreader.h
+    sha1.c
+    sha1.h)
+
+  add_executable(test-encode-decode ${test_encode_decode_SOURCES})
+  target_link_libraries(test-encode-decode PRIVATE fdk-aac)
 endif()
